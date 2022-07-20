@@ -1,18 +1,18 @@
 ---
 layout: home
 hero:
-  name: VitePress
-  text: Vite & Vue powered static site generator.
-  tagline: Lorem ipsum...
+  name: AkunPress
+  text: akun的静态站点个人文档网站.
+  tagline: 简单、强大且高性能。记录平时常用文档。
   image:
     src: /logo.png
-    alt: VitePress
+    alt:  akun
   actions:
     - theme: brand
       text: 开始 使用
       link: /guide/index
     - theme: alt
-      text: View on GitHub
+      text: 文档地址
       link: https://github.com/xiaokunyun/vitepress
 # home: true
 # heroImage: /logo.png
