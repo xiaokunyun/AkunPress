@@ -61,6 +61,7 @@ function createSidebar() {
                 collapsible: true,
                 items: [
                     { text: 'index', link: '/guide/index.md' },
+                    { text: 'git提交', link: '/guide/git.md' },
                     { text: 'Introduction', link: '/guide/introduction.md' },
                     { text: 'one', link: '/guide/one.md' },
                     { text: 'two', link: '/guide/two.md' },
