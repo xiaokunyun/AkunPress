@@ -53,12 +53,6 @@ function createNav() {
                 { text: 'web', link: 'http://web.xiaokunyun.cn/' },
                 { text: '仿网易云api', link: 'http://node.xiaokunyun.cn/' },
                 { text: '更新日志', link: 'https://github.com/xiaokunyun/vitepress/blob/master/CHANGELOG.md' },
-                {
-                    text: '更新日志',
-                    link: 'https://github.com/vbenjs/vue-vben-admin/blob/main/CHANGELOG.md',
-                  },
-                // { text: '文档源码', link: 'https://xiaokunyun.github.io/vitepress/' }
-
             ]
         },
     ]
