@@ -1,7 +1,7 @@
 # git提交流程
 #### 在命令行上创建一个新的存储库
 ### echo "# testss" >> README.md 
-git init 
+# git init 
 git add README.md
  git commit -m "first commit"
  git branch -M 'master' 
