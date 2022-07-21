@@ -97,15 +97,6 @@ function createSidebar() {
                 ]
             }
         ],
-        // '/team/': [
-        //     {
-        //         text: '团队',
-        //         collapsible: true,
-        //         items: [
-        //             { text: 'index', link: '/team/index.md' },
-        //         ]
-        //     }
-        // ],
         '/relevant/': [
             {
                 text: 'relevant',
