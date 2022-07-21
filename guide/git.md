@@ -2,7 +2,7 @@
 #### 在命令行上创建一个新的存储库
 ### echo "# testss" >> README.md 
 # git init 
-git add README.md
+> git add README.md
  git commit -m "first commit"
  git branch -M 'master' 
 git remote add origin https://github.com/xiaokunyun/testss.git
