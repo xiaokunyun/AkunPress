@@ -11,14 +11,13 @@ export default defineConfig({
     themeConfig: {
         logo: '/logo.png',
         siteTitle: false,
-        nav: createNav(),// 头部导航栏
-        sidebar: createSidebar(),//侧边栏
+        nav: createNav(),
+        sidebar: createSidebar(),
         socialLinks: [
             { icon: 'github', link: 'https://xiaokunyun.github.io/vitepress/' },
             { icon: 'twitter', link: '...' },
             { icon: 'discord', link: '...' }
         ],
-        //页脚
         footer: {
             message: '在 MIT 许可下发布。',
             copyright: '版权所有 © 2022-至今 AKUN'
