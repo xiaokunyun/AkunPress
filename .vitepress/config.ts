@@ -34,14 +34,14 @@ function createNav() {
                     text: '指南',
                     link: '/guide/introduction',
                 },
-                {
-                    text: '深入',
-                    link: '/dep/index',
-                },
-                {
-                    text: '其他',
-                    link: '/other/index',
-                },
+                // {
+                //     text: '深入',
+                //     link: '/dep/index',
+                // },
+                // {
+                //     text: '其他',
+                //     link: '/other/index',
+                // },
             ]
         },
         // { text: '团队', link: '/team/' },
