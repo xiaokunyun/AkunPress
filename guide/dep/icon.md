@@ -66,7 +66,7 @@
 
 ## Iconify 图标
 
-使用方式请参考 [Icon 组件](../components/icon.md)
+<!-- 使用方式请参考 [Icon 组件](..//icon.md) -->
 
 项目中使用到的是 [vite-plugin-purge-icons](https://github.com/antfu/purge-icons/blob/main/packages/vite-plugin-purge-icons/README.md) 这个插件来进行图标实现。
 
@@ -231,15 +231,15 @@ yarn gen:icon
 
 local 表示本地，online 表示在线，回车确认
 
-![](/images/genIcon.png)
+<!-- ![](/images/genIcon.png) -->
 
 - 选择你要生成的图标集,回车确认
 
-![](/images/selectIconSet.png)
+<!-- ![](/images/selectIconSet.png) -->
 
 - 选择图标输出的目录(项目默认 src/components/Icon/data)，可以直接回车选择默认
 
-![](/images/outDir.png)
+<!-- ![](/images/outDir.png) -->
 
 到这里图标集已经生成完成了，此时你的图标选择器已经是你所选的的图标集的图标了。
 
