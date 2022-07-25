@@ -27,15 +27,19 @@ export default defineConfig({
 function createNav() {
     return [
         {
-            text: '指南', link: '/guide/',
+            text: '指南',
             items: [
                 { text: '指南', link: '/guide/introduction', },
-                { text: '深入',link: '/dep/index', },
-                { text: '其他', link: '/other/index',},
+                { text: '深入', link: '/guide/dep/cors.md', },
+                { text: '其他', link: '/guide/other/index.md', },
             ]
         },
-        // { text: '团队', link: '/team/' },
-        { text: '相关', link: '/relevant/' },
+        {
+            text: '组件', link: '/components/',
+            items: [
+                { text: '介绍', link: '/components/introduction', },
+            ]
+        },
         {
             text: '相关链接',
             items: [
@@ -45,6 +49,11 @@ function createNav() {
                 { text: '更新日志', link: 'https://github.com/xiaokunyun/vitepress/blob/master/CHANGELOG.md' },
             ]
         },
+        { text: '社区',
+        items: [
+            { text: '排期中', link: '#', },
+        ]
+    }
     ]
 }
 function createSidebar() {
@@ -54,49 +63,41 @@ function createSidebar() {
                 text: '指南',
                 collapsible: true,
                 items: [
-                    { text: 'index', link: '/guide/index.md' },
-                    { text: 'git提交', link: '/guide/git.md' },
-                    { text: 'Introduction', link: '/guide/introduction.md' },
-                    { text: 'one', link: '/guide/one.md' },
-                    { text: 'two', link: '/guide/two.md' },
-                    { text: 'test', link: '/guide/test.md' },
+                    { text: '前言', link: '/guide/introduction' },
+                    { text: '开始', link: '/guide/index' },
+
                 ]
             },
             {
                 text: '深入',
                 collapsible: true,
                 items: [
-                    { text: 'index', link: '/guide/index.md' },
-                    { text: 'git提交', link: '/guide/git.md' },
-                    { text: 'Introduction', link: '/guide/introduction.md' },
-                    { text: 'one', link: '/guide/one.md' },
-                    { text: 'two', link: '/guide/two.md' },
-                    { text: 'test', link: '/guide/test.md' },
+                    { text: '跨域处理', link: '/guide/dep/cors.md' },
+                    { text: '图标', link: '/guide/dep/icon.md' },
+                    { text: '国际化', link: '/guide/dep/i18n.md' },
+                    { text: '项目规范', link: '/guide/dep/lint.md' },
+                    // { text: '黑暗主题', link: '/guide/dep/icon.md' },
                 ]
             },
             {
                 text: '其他',
                 collapsible: true,
                 items: [
-                    { text: 'index', link: '/guide/index.md' },
-                    { text: 'git提交', link: '/guide/git.md' },
-                    { text: 'Introduction', link: '/guide/introduction.md' },
-                    { text: 'one', link: '/guide/one.md' },
-                    { text: 'two', link: '/guide/two.md' },
-                    { text: 'test', link: '/guide/test.md' },
+                    { text: '常见问题', link: '/guide/other/faq', },
+                    { text: '常见疑点', link: '/guide/other/doubt', },
+                    { text: '测试服务', link: '/guide/other/server', },
+                    { text: '相关项目', link: '/guide/other/project', },
                 ]
             }
         ],
-        '/relevant/': [
+        '/components/': [
             {
-                text: 'relevant',
+                text: '组件',
                 collapsible: true,
                 items: [
-                    { text: 'index', link: '/relevant/index.md' },
-                    { text: 'one', link: '/relevant/one.md' },
-                    { text: 'two ', link: '/relevant/two.md' },
+                    { text: '前言', link: '/components/introduction' },
                 ]
             }
-        ]
+        ],
     }
 }
