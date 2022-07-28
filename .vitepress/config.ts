@@ -21,7 +21,8 @@ export default defineConfig({
         footer: {
             message: '在 MIT 许可下发布。',
             copyright: '版权所有 © 2022-至今 AKUN'
-        }
+        },
+       
     }
 })
 function createNav() {

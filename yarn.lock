@@ -135,7 +135,7 @@
   resolved "https://registry.npmmirror.com/@docsearch/css/-/css-3.1.1.tgz#e0976bf995e383f8ee8657306311b9cb95016330"
   integrity sha512-utLgg7E1agqQeqCJn05DWC7XXMk4tMUUnL7MZupcknRu2OzGN13qwey2qA/0NAKkVBGugiWtON0+rlU0QIPojg==
 
-"@docsearch/js@^3.0.0":
+"@docsearch/js@3", "@docsearch/js@^3.0.0":
   version "3.1.1"
   resolved "https://registry.npmmirror.com/@docsearch/js/-/js-3.1.1.tgz#fbcf85d034b11ae15397310ef117c7d6fb4e6871"
   integrity sha512-bt7l2aKRoSnLUuX+s4LVQ1a7AF2c9myiZNv5uvQCePG5tpvVGpwrnMwqVXOUJn9q6FwVVhOrQMO/t+QmnnAEUw==
