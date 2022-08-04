@@ -141,6 +141,7 @@ function sidebarWeb(){
             collapsible: true,
             items: [
                 { text: '前言', link: '/web/index' },
+                { text: '开源项目推荐', link: '/web/recommend' },
             ]
         }
     ]
