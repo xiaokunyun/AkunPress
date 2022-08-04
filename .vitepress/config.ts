@@ -20,7 +20,7 @@ export default defineConfig({
         },
         // createSidebar(),
         socialLinks: [
-            { icon: 'github', link: 'https://xiaokunyun.github.io/vitepress/' },
+            { icon: 'github', link: 'https://github.com/xiaokunyun/vitepress' },
             { icon: 'twitter', link: '...' },
             { icon: 'discord', link: '...' },
             // { icon: 'speech_balloon', link: '...' }

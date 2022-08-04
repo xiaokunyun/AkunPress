@@ -2,16 +2,20 @@
 
 ## 简介
 
- 本项目基于[Vitepress](https://github.com/vitejs/vite)该项目会持续跟进最新技术。
+ 
+- 本项目基于[Vitepress](https://github.com/vitejs/vite)该项目会持续跟进最新技术.
+- 也可参考[Vben Admin文档预览](https://vvbin.cn/doc-next/) 或 [Vben Admin文档源码](https://github.com/vbenjs/vue-vben-admin-doc)本文一部分灵感皆（搬运）来源于此 。
+
 
 ## 文档
 
 - 中文文档地址为 [AkunPress](https://github.com/xiaokunyun/vitepress)，采用 Vitepress 开发。如发现文档有误，欢迎提 pr 帮助我们改进。
-- 英文文档暂时没有时间来写。
+- 英文文档暂时没有时间来写（暂不支持国际化）。
 
 ### 本地运行文档
 
-如需本地运行文档，请拉取代码到本地。
+- 如需本地运行文档，请拉取代码到本地。
+- 拉取代码前请确保，已安装 [Node](http://nodejs.cn/)。 npm管理工具[yarn](https://www.yarnpkg.cn/)。
 
 ```bash
 # 拉取代码
@@ -24,19 +28,19 @@ yarn
 yarn dev
 ```
 
-## 需要掌握的基础知识
+## 推荐vue开发者需要掌握的基础知识（）
 
 本项目需要一定前端基础知识，请确保掌握 Vue 的基础知识，以便能处理一些常见的问题。
 建议在开发前先学一下以下内容，提前了解和学习这些知识，会对项目理解非常有帮助:
 
-- [Vue3 文档](https://vuejs.org/)
+- [Vue3 文档](https://staging-cn.vuejs.org/) 
 - [Vue-RFCS](https://github.com/vuejs/rfcs)
 - [Vue2 迁移到 3](https://v3-migration.vuejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vue-router](https://router.vuejs.org/)
 <!-- - [Ant-Design-Vue](https://2x.antdv.com/docs/vue/introduce-cn/) -->
 - [Es6](https://es6.ruanyifeng.com/)
-- [Vitejs](https://vitejs.dev/)
+- [Vitejs](https://vitejs.dev/)- 新一代前端构建工具 `Vite`
 - [WindiCss](https://windicss.netlify.app/)
 
 <!-- ## 模版 -->
@@ -49,13 +53,15 @@ yarn dev
 
 `vue-vben-admin` 精简版本。删除了相关示例、无用文件及功能、依赖。可以根据自身需求安装对应的依赖。因为使用的是 `vite`，依赖删除不会导致相关组件或者 `hook` 发出警告。只在需要的时候**安装对应的库**即可。 -->
 
-## vite 插件推荐
+## 如果你的前端构建工具是vite 推荐一下插件
 
-<!-- 如果这些插件对你有帮助，可以给一个 star 支持下 -->
+如果这些插件对你有帮助，可以给一个 star 支持下
 
 - [vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock) - 用于本地及开发环境数据 `mock`
 - [vite-plugin-html](https://github.com/vbenjs/vite-plugin-html) - 用于 `html` 模版转换，可以在`html`文件内进行书写模版语法
 - [vite-plugin-style-import](https://github.com/vbenjs/vite-plugin-style-import) - 用于组件库样式按需引入
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - Vue 的按需组件自动导入。
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - 自动导入 Vite、Webpack、Rollup 和 esbuild 的 API。支持 TypeScript。由unplugin提供支持。 `unplugin-auto-import`
 - [vite-plugin-imagemin](https://github.com/vbenjs/vite-plugin-imagemin) - 用于打包压缩图片资源
 - [vite-plugin-theme](https://github.com/vbenjs/vite-plugin-theme) - 用于在线切换主题色/黑暗主题适配等主题相关配置
 - [vite-plugin-compression](https://github.com/vbenjs/vite-plugin-compression) - 用于打包输出`.gz`|`.br`文件
@@ -73,5 +79,5 @@ yarn dev
 
 ## 如何加入我们
 
-<!-- - [Vue-Vben-Admin](https://github.com/vbenjs/vue-vben-admin) 还在持续更新中，本项目欢迎您的参与，共同维护，逐步完善，将项目做得更强。同时整个项目本着一切免费的原则，原则上不会收取任何费用及版权，可以放心使用。 -->
+- [AkunPress](https://xiaokunyun.github.io/vitepress/) 还在持续更新中，本项目欢迎您的参与，共同维护，逐步完善，将项目做得更强。同时整个项目本着一切免费的原则，原则上不会收取任何费用及版权，可以放心使用。
 - 如果你想加入我们，可以多提供一些好的建议或者提交 pr，我们会根据你的活跃度邀请你加入。
