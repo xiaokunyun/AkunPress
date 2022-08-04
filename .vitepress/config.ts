@@ -16,7 +16,7 @@ export default defineConfig({
             '/guide/': sidebarGuide(),
             '/components/': sidebarAssembly(),
             '/team/': sidebarTeam(),
-
+            '/web/': sidebarWeb(),
         },
         // createSidebar(),
         socialLinks: [
@@ -58,6 +58,12 @@ function createNav() {
             text: '组件', link: '/components/',
             items: [
                 { text: '介绍', link: '/components/introduction', },
+            ]
+        },
+        {
+            text: '前端', link: '/web/',
+            items: [
+                { text: '介绍', link: '/web/index', },
             ]
         },
         {
@@ -124,6 +130,17 @@ function sidebarAssembly() {
             collapsible: true,
             items: [
                 { text: '前言', link: '/components/introduction' },
+            ]
+        }
+    ]
+}
+function sidebarWeb(){
+    return [
+        {
+            text: '前端体系',
+            collapsible: true,
+            items: [
+                { text: '前言', link: '/web/index' },
             ]
         }
     ]
