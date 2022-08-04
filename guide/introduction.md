@@ -4,7 +4,7 @@
 
  
 - 本项目基于[Vitepress](https://github.com/vitejs/vite)该项目会持续跟进最新技术.
-- 也可参考[Vben Admin文档预览](https://vvbin.cn/doc-next/) 或 [Vben Admin文档源码](https://github.com/vbenjs/vue-vben-admin-doc)本文一部分灵感皆（搬运）来源于此 。
+- 也可参考[Vben Admin文档预览](https://vvbin.cn/doc-next/) 或 [Vben Admin文档源码](https://github.com/vbenjs/vue-vben-admin-doc)本文一部分灵感皆来源（搬运）于此 。
 
 
 ## 文档
