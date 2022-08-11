@@ -10,7 +10,7 @@ export default defineConfig({
     appearance: true,
     themeConfig: {
         logo: '/logo.png',
-        // siteTitle: false,
+        siteTitle: false,
         nav: createNav(),
         sidebar: {
             '/guide/': sidebarGuide(),
@@ -25,6 +25,14 @@ export default defineConfig({
             { icon: 'discord', link: '...' },
             // { icon: 'speech_balloon', link: '...' }
         ],
+        localeLinks: {
+            text: '简体中文' ,
+            items: [
+              { text: 'English', link: '#' },
+              { text: '日本語', link: '#' },
+              { text: 'Español', link: '#' }
+            ]
+          },
         editLink: {
             pattern: 'https://github.com/xiaokunyun/vitepress/:path',
             text: '在 GitHub 上编辑此页面'
@@ -36,7 +44,10 @@ export default defineConfig({
         algolia: {
             appId: '8J64VVRP8K',
             apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-            indexName: 'vitepress'
+            indexName: 'vitepress',
+            searchParameters: {
+                facetFilters: ['tags:en']
+              }
         },
         carbonAds: {
             code: 'CEBDT27Y',

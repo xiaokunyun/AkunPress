@@ -6,7 +6,7 @@ hero:
   tagline: 简单、强大且高性能。记录平时常所用知识。文档初步构建中，（暂不支持国际化）
   image:
     src: /logo.png
-    alt:  akun
+    alt: akun
   actions:
     - theme: brand
       text: 开始 使用
@@ -32,3 +32,11 @@ features:
   - title: 🔑 文档内容
     details: 仅供参考
 ---
+<script setup>
+import { onMounted } from 'vue'
+import { fetchReleaseTag } from './.vitepress/utils/fetchReleaseTag.js'
+
+onMounted(() => {
+  fetchReleaseTag()
+})
+</script>
