@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a,d as r}from"./app.6429e3c2.js";const m=JSON.parse('{"title":"\u5F00\u6E90\u9879\u76EE\u63A8\u8350","description":"","frontmatter":{},"headers":[],"relativePath":"web/recommend.md"}'),n={name:"web/recommend.md"},i=r("",3),o=[i];function c(d,s,p,_,l,h){return t(),a("div",null,o)}var f=e(n,[["render",c]]);export{m as __pageData,f as default};
