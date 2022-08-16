@@ -16,6 +16,7 @@ export default defineConfig({
             '/guide/': sidebarGuide(),
             '/components/': sidebarAssembly(),
             '/team/': sidebarTeam(),
+            '/imoccAdmin/': imoccAdminList(),
             '/web/': sidebarWeb(),
         },
         // createSidebar(),
@@ -26,13 +27,13 @@ export default defineConfig({
             // { icon: 'speech_balloon', link: '...' }
         ],
         localeLinks: {
-            text: '简体中文' ,
+            text: '简体中文',
             items: [
-              { text: 'English', link: '#' },
-              { text: '日本語', link: '#' },
-              { text: 'Español', link: '#' }
+                { text: 'English', link: '#' },
+                { text: '日本語', link: '#' },
+                { text: 'Español', link: '#' }
             ]
-          },
+        },
         editLink: {
             pattern: 'https://github.com/xiaokunyun/vitepress/:path',
             text: '在 GitHub 上编辑此页面'
@@ -47,7 +48,7 @@ export default defineConfig({
             indexName: 'vitepress',
             searchParameters: {
                 facetFilters: ['tags:en']
-              }
+            }
         },
         carbonAds: {
             code: 'CEBDT27Y',
@@ -84,6 +85,12 @@ function createNav() {
             ]
         },
         {
+            text: 'imocc-Admin', link: '/imoccAdmin/',
+            items: [
+                { text: '介绍', link: '/imoccAdmin/index', },
+            ]
+        },
+        {
             text: '相关链接',
             items: [
                 { text: '文档源码', link: 'https://github.com/xiaokunyun/vitepress' },
@@ -97,7 +104,7 @@ function createNav() {
             items: [
                 { text: '排期中', link: '#', },
             ]
-        }
+        },
     ]
 }
 function sidebarGuide() {
@@ -145,7 +152,7 @@ function sidebarAssembly() {
         }
     ]
 }
-function sidebarWeb(){
+function sidebarWeb() {
     return [
         {
             text: '前端体系',
@@ -168,4 +175,25 @@ function sidebarTeam() {
         }
     ]
 }
-
+function imoccAdminList() {
+    return [
+        {
+            text: 'imocc-Admin',
+            collapsible: true,
+            items: [
+                { text: '一开篇', link: '/imoccAdmin/index' },
+                // { text: '二编程规范', link: '/imoccAdmin/two.md' },
+                // { text: '三编程规范', link: '/imoccAdmin/3.md' },
+                // { text: '四编程规范', link: '/imoccAdmin/4.md' },
+                // { text: '五编程规范', link: '/imoccAdmin/5.md' },
+                // { text: '六编程规范', link: '/imoccAdmin/6.md' },
+                // { text: '七编程规范', link: '/imoccAdmin/7.md' },
+                // { text: '八编程规范', link: '/imoccAdmin/8.md' },
+                // { text: '九编程规范', link: '/imoccAdmin/9.md' },
+                // { text: '十编程规范', link: '/imoccAdmin/10.md' },
+                // { text: '十一编程规范', link: '/imoccAdmin/11.md' },
+                // { text: '十二编程规范', link: '/imoccAdmin/12.md' },
+            ]
+        }
+    ]
+} 
