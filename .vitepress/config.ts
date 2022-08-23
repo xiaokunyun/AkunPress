@@ -10,7 +10,7 @@ export default defineConfig({
     appearance: true,
     themeConfig: {
         logo: '/logo.png',
-        siteTitle: false,
+        // siteTitle: false,
         nav: createNav(),
         sidebar: {
             '/guide/': sidebarGuide(),
