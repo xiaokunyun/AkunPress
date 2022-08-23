@@ -3,16 +3,13 @@ on:
   push:
     branches:
       - master 
-
 jobs:
   deploy:
     
     strategy:
       matrix:
         node-version: [16]
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - uses: pnpm/action-setup@v2.2.2
@@ -25,7 +22,6 @@ jobs:
         cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
-
     - name: Build
       run: pnpm build
     - name: Deploy
@@ -33,52 +29,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./.vitepress/dist
-# name: Deploy
-
-# on:
-#   push:
-#     branches:
-#       - master 
-
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v2
-#     - uses: pnpm/action-setup@v2.2.2
-#       with:
-#         version: 7
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v2
-#       with:
-#         node-version: ${{ matrix.node-version }}
-#         cache: 'pnpm'
-#     - name: Install dependencies
-#       run: pnpm install
-
-  #   - name: Build
-  #     run: pnpm build
-
-  #  - name: Deploy
-  #    uses: peaceiris/actions-gh-pages@v3
-  #    with:
-  #       github_token: ${{ secrets.GITHUB_TOKEN }}
-  #       publish_dir: ./.vitepress/dist
-    # steps:
-    #   - uses: actions/checkout@v3
-    #   - uses: actions/setup-node@v3
-    #     with:
-    #       node-version: 16
-    #       cache: "pnpm"
-    #   - run: npm install -g pnpm
-    #   - run: pnpm install 
-    #   # - run: yarn install --frozen-lockfile
-
-    #   - name: Build
-    #     run: pnpm build
-
-    #   - name: Deploy
-    #     uses: peaceiris/actions-gh-pages@v3
-    #     with:
-    #       github_token: ${{ secrets.GITHUB_TOKEN }}
-    #       publish_dir: ./.vitepress/dist
