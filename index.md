@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: AkunPress
-  text: 静态文档中文站点.
+  text: 静态中文站点.
   tagline: 简单、强大且高性能。记录平时常所用知识。文档初步构建中，（暂不支持国际化）
   image:
     src: /logo.png
