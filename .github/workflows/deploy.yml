@@ -22,13 +22,13 @@ jobs:
       run: pnpm install
 
     - name: Build
-        run: pnpm build
+      run: pnpm build
 
    - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.vitepress/dist
+     uses: peaceiris/actions-gh-pages@v3
+     with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./.vitepress/dist
     # steps:
     #   - uses: actions/checkout@v3
     #   - uses: actions/setup-node@v3
