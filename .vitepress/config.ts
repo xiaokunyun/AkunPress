@@ -3,7 +3,7 @@
  */
 import { defineConfig } from 'vitepress'
 export default defineConfig({
-    base: '/vitepress/',
+    base: '/AkunPress/',
     title: 'AkunPress',
     lang: 'zh-CN',
     description: 'Just playing around.',
