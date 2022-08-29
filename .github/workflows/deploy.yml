@@ -5,7 +5,6 @@ on:
       - master 
 jobs:
   deploy:
-    
     strategy:
       matrix:
         node-version: [16]
