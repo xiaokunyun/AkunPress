@@ -19,12 +19,10 @@ export default defineConfig({
             '/imoccAdmin/': imoccAdminList(),
             '/web/': sidebarWeb(),
         },
-        // createSidebar(),
         socialLinks: [
             { icon: 'github', link: 'https://github.com/xiaokunyun/vitepress' },
             { icon: 'twitter', link: '...' },
             { icon: 'discord', link: '...' },
-            // { icon: 'speech_balloon', link: '...' }
         ],
         localeLinks: {
             text: '简体中文',
