@@ -12,11 +12,11 @@
 
 ## 环境准备
 
-本地环境需要安装 [Yarn1.x](https://yarnpkg.com/)、[Node.js](http://nodejs.org/) 和 [Git](https://git-scm.com/)
+本地环境需要安装 [pnpm](https://pnpm.io/zh/)、[Node.js](http://nodejs.org/) 和 [Git](https://git-scm.com/)
 
 ::: warning 注意
 
-- 必须使用[Yarn1.x](https://yarnpkg.com/)，否则依赖可能安装不上。
+- 必须使用[pnpm](https://pnpm.io/zh/)否则依赖可能安装不上。
 - [Node.js](http://nodejs.org/) 版本要求`12.x`以上，且不能为`13.x`版本，这里推荐 `14.x` 及以上。
 
 :::
@@ -36,7 +36,7 @@
 
 ## 代码获取
 
-::: warning 注意
+:::注意
 
 注意存放代码的目录及所有父级目录不能存在中文、韩文、日文以及空格，否则安装依赖后启动会出错。
 
@@ -69,17 +69,17 @@ node -v
 
 ### 安装依赖
 
-#### yarn 安装
+#### pnpm 安装
 
-必须使用 [Yarn](https://github.com/yarnpkg/yarn)进行依赖安装（若其他包管理器安装不了需要自行处理）。
+必须使用  [pnpm](https://pnpm.io/zh/)进行依赖安装（若其他包管理器安装不了需要自行处理）。
 
-如果未安装`yarn`，可以用下面命令来进行全局安装
+如果未安装`pnpm`，可以用下面命令来进行全局安装
 
 ```bash
-# 全局安装yarn
-npm i -g yarn
+# 全局安装pnpm
+npm i -g pnpm
 # 验证
-yarn -v # 出现对应版本号即代表安装成功
+pnpm -v # 出现对应版本号即代表安装成功
 ```
 
 #### 依赖安装命令
@@ -88,14 +88,14 @@ yarn -v # 出现对应版本号即代表安装成功
 
 ```bash
 # 安装依赖
-yarn
+pnpm i
 ```
 
 ### imagemin 依赖安装失败解决方法
 
 由于 imagemin 在国内安装困难，提供以下几个解决方案：
 
-1. 使用 yarn 在 package.json 内配置(推荐，项目内已集成，前提是必须使用 yarn)
+1. 使用 pnpm 在 package.json 内配置(推荐，项目内已集成，前提是必须使用 yarn)
 
 ```json
 "resolutions": {
@@ -120,7 +120,7 @@ yarn
 ```bash
 "scripts": {
   # 安装依赖
-  "bootstrap": "yarn install",
+  "bootstrap": "pnpm install",
   # 运行项目
     "dev": "vitepress dev",
   # 构建项目
@@ -136,7 +136,7 @@ yarn
 
 ### 重新安装依赖
 
-该命令会先删除 `node_modules`、`yarn.lock`、`package.lock.json` 后再进行依赖重新安装（安装速度会明显变慢）。
+该命令会先删除 `node_modules`、`pnpm-lock.yaml`、`package.lock.json` 后再进行依赖重新安装（安装速度会明显变慢）。
 
 接下来你可以修改代码进行业务开发了。我们内建了模拟数据、HMR 实时预览、状态管理、国际化、全局路由等各种实用的功能辅助开发，请阅读其他章节了解更多。
 

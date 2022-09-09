@@ -1,4 +1,5 @@
 name: Deploy
+ # 触发方式：每次代码push到master分支时触发
 on:
   push:
     branches:
@@ -27,4 +28,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/.vitepress/dist
+        # publish_dir:这里填写打包后的路径地址
+        publish_dir: ./docs/.vitepress/dist 
