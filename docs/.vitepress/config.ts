@@ -64,10 +64,16 @@ function createNav() {
                 { text: '其他', link: '/guide/other/index.md', },
             ]
         },
+        // {
+        //     text: '组件', link: '/components/',
+        //     items: [
+        //         { text: '介绍', link: '/components/introduction', },
+        //     ]
+        // },
         {
-            text: '组件', link: '/components/',
+            text: 'imocc-Admin', link: '/imoccAdmin/',
             items: [
-                { text: '介绍', link: '/components/introduction', },
+                { text: '介绍', link: '/imoccAdmin/index', },
             ]
         },
         {
@@ -82,17 +88,13 @@ function createNav() {
                 { text: '介绍', link: '/team/index', },
             ]
         },
-        {
-            text: 'imocc-Admin', link: '/imoccAdmin/',
-            items: [
-                { text: '介绍', link: '/imoccAdmin/index', },
-            ]
-        },
+       
         {
             text: '相关链接',
             items: [
                 { text: '文档源码', link: 'https://github.com/xiaokunyun/vitepress' },
                 { text: 'web', link: 'http://web.xiaokunyun.cn/' },
+                { text: 'web2', link: 'https://xiaokunyun.github.io/' },
                 { text: 'admin', link: 'http://admin.xiaokunyun.cn/'},
                 { text: '仿网易云api', link: 'http://node.xiaokunyun.cn/' },
                 { text: '更新日志', link: 'https://github.com/xiaokunyun/vitepress/blob/master/CHANGELOG.md' },
@@ -181,7 +183,7 @@ function imoccAdminList() {
             collapsible: true,
             items: [
                 { text: '一开篇', link: '/imoccAdmin/index' },
-                // { text: '二编程规范', link: '/imoccAdmin/two.md' },
+                { text: '二编程规范', link: '/imoccAdmin/two.md' },
                 // { text: '三编程规范', link: '/imoccAdmin/3.md' },
                 // { text: '四编程规范', link: '/imoccAdmin/4.md' },
                 // { text: '五编程规范', link: '/imoccAdmin/5.md' },
