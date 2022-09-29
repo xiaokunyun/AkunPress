@@ -1,0 +1,1 @@
+import{_ as i,o as l,c as e,d as o}from"./app.31287617.js";const h=JSON.parse('{"title":"\u7B2C\u4E00\u7AE0\uFF1A\u5F00\u7BC7","description":"","frontmatter":{},"headers":[],"relativePath":"imoccAdmin/index.md"}'),c={name:"imoccAdmin/index.md"},t=o("",7),d=[t];function s(n,r,a,p,_,m){return l(),e("div",null,d)}const x=i(c,[["render",s]]);export{h as __pageData,x as default};
